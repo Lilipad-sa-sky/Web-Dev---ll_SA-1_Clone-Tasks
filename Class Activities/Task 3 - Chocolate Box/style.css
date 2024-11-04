@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*HIDES THE SCROLLABR*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar */
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+header .logo {
+    margin: 1rem 0 0 3.5rem;
+}
+
+.logo p {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 0 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+.navbar {
+    margin-right: 3.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
+
+.navbar button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar ul li button a {
+    background-color: #582f0e;
+    border: 1px solid #582f0e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.navbar ul li button a:hover {
+    color: black;
+    background-color: #c38e70;
+    border-color: #c38e70;
+    transition: 0.5s;
+}
+
+/*main design home page*/
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.548)), url(img/irene-kredenets-wRY_4FGnDIM-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-resolution: from-image;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    color: white;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 5px;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    background-color: #c38e70;
+    color: black;
+    border: 2px solid #c38e70;
+    transition: 1.2s;
+    /*i like its effect*/
+}
+
+/*2nd page*/
+.rightc {
+    margin: 3rem 0 5rem 10rem;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+#line {
+    margin: 0.5rem 10rem 0.5rem 10rem;
+}
+
+.leftc {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0rem 2rem;
+    margin: 4.5rem 13rem 4rem 0;
+}
+
+.leftc h4 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.leftc h5 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+}
+
+.leftc p {
+    line-height: 1.5;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.bgcon {
+    background: rgb(250, 250, 244);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*image holder*/
+.bgcontainer {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.548)), url("img/merve-aydin-jD2dIC2IZME-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.holder {
+    padding: 10rem 0;
+}
+
+/*grids*/
+/*GRID STYLE FOR DIFFERENT COURSES*/
+.select h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin-top: 5rem;
+}
+
+.bottomgrid {
+    margin: 3rem 0 4rem 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 200px));
+    column-gap: 1.4rem;
+    row-gap: 1.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bottomgrid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+    border-radius: 0.3rem;
+}
+
+.bottomgrid img:hover {
+    transform: scale(1.1);
+}
+
+.bottomgrid a {
+    text-decoration: none;
+}
+
+.bottomgrid p {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.bottomgrid p:hover {
+    color: #088199;
+}
+
+/*image holder 2*/
+.bgcontainer2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.548)), url("img/american-heritage-chocolate-TZFshUFzWRQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.holder {
+    padding: 7rem 0;
+    color: white;
+}
+
+.holder p {
+    font-size: 2rem;
+    padding: 0 20rem;
+    text-align: center;
+}
+
+.holder h5 {
+    padding-top: 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #582f0e;
+    color: white;
+}
+
+.footer p {
+    text-align: center;
+}
+

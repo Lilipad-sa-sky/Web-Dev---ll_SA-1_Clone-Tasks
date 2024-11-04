@@ -1,0 +1,202 @@
+/*LOG IN PAGE STYLING*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*HIDES THE SCROLLABR*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar */
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+header .logo {
+    margin: 1rem 0 0 3.5rem;
+}
+
+.logo p {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 0 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+.navbar {
+    margin-right: 3.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
+
+.navbar button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar ul li button a {
+    background-color: #582f0e;
+    border: 1px solid #582f0e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.navbar ul li button a:hover {
+    color: black;
+    background-color: #c38e70;
+    border-color: #c38e70;
+    transition: 0.5s;
+}
+
+.navbar ul li a i {
+    color: white;
+}
+
+/*Log In Form*/
+body {
+    background: url('/Task 3/img/irene-kredenets-wRY_4FGnDIM-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35rem;
+}
+
+.loginwrap {
+    width: 28rem;
+    background: transparent;
+    border: 2px solid #0a090881;
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.57);
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+}
+
+.loginwrap h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.loginwrap .inputbox {
+    width: 100%;
+    height: 2.5.6.7rem;
+    background: #f8d4c0;
+    margin: 1rem 0;
+    border-radius: 2rem;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #0a090881;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    color: black;
+    padding: 1.3rem 0.5rem 1.3rem 0.9rem;
+}
+
+.inputbox input::placeholder {
+    color: black;
+}
+
+.inputbox i {
+    position: absolute;
+    transform: translate(-240%, 93%);
+    font-size: 1rem;
+    color: black;
+}
+
+.loginwrap .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin: 1rem 0.5rem;
+}
+
+.remember-forget label input {
+    accent-color: white;
+    margin-right: 1rem;
+}
+
+.remember-forget a {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    color: #c38e70;
+}
+
+.loginbtn {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #c38e70;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.loginbtn:hover {
+    background-color: #c57444;
+}
+
+.register {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.register p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+    color: #582f0e;
+}
+/*The enf*/

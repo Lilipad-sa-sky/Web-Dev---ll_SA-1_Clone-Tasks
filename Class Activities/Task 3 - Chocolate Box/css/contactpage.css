@@ -1,0 +1,189 @@
+/*start of the css file*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*HIDES THE SCROLLABR*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar */
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+header .logo {
+    margin: 1rem 0 0 3.5rem;
+}
+
+.logo p {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 0 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+.navbar {
+    margin-right: 3.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
+
+.navbar button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar ul li button a {
+    background-color: #582f0e;
+    border: 1px solid #582f0e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.navbar ul li button a:hover {
+    color: black;
+    background-color: #c38e70;
+    border-color: #c38e70;
+    transition: 0.5s;
+}
+
+/*contacts*/
+.bottom {
+    background-color: #0a0908;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom img {
+    width: 200px;
+    margin: 2rem 0 1rem 8rem;
+}
+
+form h1 {
+    font-size: 1.7rem;
+    margin-left: 8rem;
+    color: white;
+}
+
+#envelope {
+    color: #c38e70;
+    margin: 0 0 0 8rem;
+    font-size: 2.5rem;
+}
+
+.emailbox input {
+    font-size: 1.1rem;
+    color: black;
+    padding: 0.35rem;
+    padding-right: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.emailbox button {
+    font-size: 1rem;
+    color: black;
+    border: none;
+    padding: 0.45rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #c38e70;
+}
+
+.emailbox button:hover {
+    background-color: #582f0e;
+    color: white;
+}
+
+.bottom p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0 8rem;
+    color: white;
+}
+
+.bottom p em {
+    color: #c38e70;
+}
+
+.bottom p em:hover {
+    color: #582f0e;
+}
+
+.bottom h1 {
+    margin: 1rem 0 1rem 8rem;
+}
+
+.bottom i {
+    font-size: 2rem;
+    color: #c38e70;
+}
+
+#fb {
+    margin-left: 8rem;
+    color: #c38e70;
+}
+
+#twt,
+#inst,
+#yt {
+    margin-left: 1.5rem;
+    color: #c38e70;
+}
+
+#appstore {
+    float: right;
+    width: 200px;
+    margin-right: 7rem;
+    margin-top: 7rem;
+}
+
+#googleplay {
+    float: right;
+    width: 200px;
+    margin-top: 7rem;
+}
+
+.left p {
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 7rem;
+}
+
+.left p:hover {
+    color: #79dcf1;
+}
+/*end of the css file*/
