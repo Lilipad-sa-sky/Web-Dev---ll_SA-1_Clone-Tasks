@@ -1,0 +1,483 @@
+/*START OF CSS & TASK 1 HEADACHE*/
+html {
+    box-sizing: border-box;
+}
+/*PRESETS*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: #e9e9e9;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*HIDING THE SCROLLBAR*/
+::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+/*HEADER WITH NAVBAR*/
+header {
+    text-align: center;
+}
+
+.logo {
+    align-items: center;
+    padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 19rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/*INSIDE THE BODY*/
+main {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 1rem 10rem 0 10rem;
+    background-color: white;
+}
+
+#title {/*MAIN TITLE*/
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6.6rem;
+    background-color: white;
+    padding: 1.5rem 0 0 2rem;
+}
+
+.subtitle { /*SUBTITLE*/
+    background-color: white;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.6rem;
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.subtext {
+    background-color: white;
+    padding: 0 2rem;
+}
+
+.text p {
+    font-size: 1.2rem;
+    background-color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    padding-bottom: 1rem;
+}
+
+/*MAIN CONTENT W/ COLUMS*/
+.content {
+    column-count: 3;
+    justify-content: center;
+    background-color: white;
+    padding: 1.3rem 0;
+}
+
+.column {
+    background-color: white;
+}
+
+.column p {
+    padding: 0 2rem 1.5rem 2rem;
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+
+/*FEATURED ALBUMS*/
+.feat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    background-color: white;
+}
+
+.feat-album {
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; 
+}
+
+.feat-album img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    background-color: white;
+}
+
+.albums {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.albums img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+
+/*ABOUT THE AUTHOR*/
+.author {
+    display: flex;
+    margin: 2.5rem 7rem 0 7rem;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+.side {
+    background-color: white;
+}
+
+.side h2 {
+    text-align: center;
+}
+
+.side p {
+    padding: 0 0 0 2rem;
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+
+.author-img {
+    background-color: white;
+}
+
+.author-img img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 1rem;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #14181d;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 0 10rem;
+}
+
+footer p {
+    color: white;
+    background-color: #14181d;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    padding: 2rem;
+}
+
+/*TABLET SIZE (720px-1024px)*/
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+    /*RESIZING EVERYTHING*/
+    main {
+        margin: 1rem 5rem 0 5rem;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    nav ul {
+        margin: 0 10rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    /*RESIZE*/
+    #title {
+        font-size: 4.8rem;
+        text-align: center;
+        padding: 1.5rem 0 0 0;
+    }
+
+    .subtitle {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        column-count: 1;
+        justify-content: center;
+    }
+
+    .column p {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+
+    .feat-album img, .feat-album {
+        display: none;
+    }
+
+    .author {
+        margin: 2rem 4rem 0 4rem;
+    }
+
+    .side h2 {
+        text-align: left;
+    }
+
+    .author-img img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        margin: 0 5rem;
+    }
+}
+/*END OF TAB MODE*/
+
+/*LARGE PHONE (540px-720px)*/
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+    /*RESIZE AGAIN*/
+    main {
+        margin: 1rem 0 0 0;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    nav ul {
+        margin: 0 6rem;
+    }
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    #title {
+        font-size: 4.8rem;
+        text-align: center;
+        padding: 1.5rem 0 0 0;
+    }
+
+    .subtitle {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        column-count: 1;
+        justify-content: center;
+    }
+
+    .column p {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+
+    .feat-album img, .feat-album {
+        display: none;
+    }
+
+    .album-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .albums img {
+        object-fit: cover; 
+    }
+
+    .author {
+        margin: 2rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .side h2 {
+        text-align: center;
+    }
+
+    .side p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .author-img img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        align-items: center;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
+/*END OF LARGE PHONE*/
+
+/*SMALL PHONE (360px-540px)*/
+@media only screen and (min-width: 360px) and (max-width: 540px) {
+    /*RESIZING AGAIN (2X)*/
+    main {
+        margin: 1rem 0 0 0;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    nav ul {
+        margin: 0 2rem;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+
+    #title {
+        font-size: 3rem;
+        text-align: center;
+        padding: 1rem 0 0 0;
+    }
+
+    .subtitle {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .content {
+        column-count: 1;
+        justify-content: center;
+    }
+
+    .column p {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .feat-album img, .feat-album {
+        display: none;
+    }
+
+    .album-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .albums {
+        width: 100%;
+        height: auto;
+    }
+
+    .albums img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        align-items: center;
+    }
+
+    .author {
+        margin: 0 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .side h2 {
+        text-align: center;
+    }
+
+    .side p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .author-img img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        align-items: center;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
+/*TOOK ABT 8HRS AND 2 TBSP OF COFFE TO FINISH THIS*/
+/*THE END*/
