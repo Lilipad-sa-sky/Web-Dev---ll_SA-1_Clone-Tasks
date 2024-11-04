@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: rgb(244, 254, 254);
+}
+body {
+    text-align: center;
+    margin: 16rem 2rem 0 4rem;
+    font-size: 2rem;
+}
+.g {
+    background-color:rgb(85, 7, 7);
+    color: white;
+}
+.h {
+    color: black;
+}
+.i {
+    border: 2px solid rgb(85, 7, 7);
+}

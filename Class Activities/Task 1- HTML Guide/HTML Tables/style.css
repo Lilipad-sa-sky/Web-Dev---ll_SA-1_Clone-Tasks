@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-color: rgb(228, 247, 234); 
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin: 13rem 10rem 0rem 24rem;
+}
+td {
+    border: 1px solid #202824;
+    padding: 1rem;
+}
+th {
+    background-color: #8db09e;
+    border: 1px solid #202824;
+    padding: 1rem;
+}

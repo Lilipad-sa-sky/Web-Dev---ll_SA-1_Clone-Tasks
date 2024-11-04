@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+body {
+    text-align: left;
+    margin: 3rem 2rem 0 4rem;
+    font-size: 2rem;
+}
+blockquote {
+    font-size: 1.5rem;
+}
+.toa, address {
+    font-size: 1.5rem;
+}
