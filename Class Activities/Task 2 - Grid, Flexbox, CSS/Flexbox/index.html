@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Rome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/SPQR_sign.png/800px-SPQR_sign.png">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Emperors</a>
+        <a href="#">Mythology</a>
+    </nav>
+
+    <!--the cards-->
+    <div class="con">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg/800px-Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg" 
+            alt="Caligula">
+            <div class="card-con">
+                <h2>Caligula</h2>
+                <p>Gaius Caesar Augustus Germanicus also known as Caligula. 
+                    was Roman emperor from AD 37 until his assassination in AD 41.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://aelarsen.wordpress.com/wp-content/uploads/2014/07/0801_4937_l.jpg" 
+            alt="Commodus">
+            <div class="card-con">
+                <h2>Commodus</h2>
+                <p>Caesar Marcus Aurelius Commodus Antoninus Augustus also known as Commodus. 
+                    was a Roman emperor from 177 to 192 (sole emperor after 180).</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.gettyimages.com/id/517432270/photo/bust-of-the-roman-emperor-nero-the-bust-is-in-the-uffizi-gallery-florence-undated.jpg?s=612x612&w=gi&k=20&c=5NzxD7do-QyBnPdkoVBdORxzQIkqhb2hI6JeHmv61eo=" 
+            alt="Nero">
+            <div class="card-con">
+                <h2>Nero</h2>
+                <p>Nero Claudius Caesar Augustus Germanicus also known as Nero. 
+                    was a Roman emperor and the final emperor of the Julio-Claudian dynasty, 
+                    reigning from AD 54 until his death in AD 68.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!--gallery-->
+    <div class="gallery-con">
+        <div class="gallery">
+            <img src="https://i.guim.co.uk/img/media/ec1eb2bb3bf2ae2ae9a0c1ec570cf16d6f138959/0_0_4617_2770/master/4617.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f88da7f09c124d60797f79f16a5a0f0e" 
+            alt="Ancient Rome">
+            <img src="https://external-preview.redd.it/top-5-roman-gladiators-legends-of-the-arena-v0-klIm_mFJHXV0ZWQ1iI_nWIMzHV5Kb8h8zDf0ZyVTp9Y.jpg?auto=webp&s=c0f8d1f913bf5c3a904447660faeb77ebaedb9b4" 
+            alt="Gladiators">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Cicero_Denounces_Catiline_in_the_Roman_Senate_by_Cesare_Maccari.png" 
+            alt="Senate Meeting">
+            <img src="https://www.historyanswers.co.uk/wp-content/uploads/2016/01/201817-stranger.jpg" 
+            alt="Roman Army">
+        </div>
+    </div>
+
+    <!--quix thing-->
+    <div class="quiz-con">
+        <div class="quiz-ques">
+            <h3>Question 1: Who founded Ancient Rome?</h3>
+            <div class="quiz-choices">
+                <label><input type="radio" name="q1" value="A"> A. Romulus and Remus</label>
+                <label><input type="radio" name="q1" value="B"> B. Julius Caesar</label>
+                <label><input type="radio" name="q1" value="C"> C. Lupa</label>
+                <label><input type="radio" name="q1" value="D"> D. Lucius Tarquinius Superbus</label>
+            </div>
+        </div>
+    </div>
+
+    <!--to never do list-->
+    <div class="todo-list">
+        <div class="todo-stuff">
+            <input type="checkbox" id="task1">
+            <label for="task1">Commit mass murder and conquer kingdoms</label>
+            <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+        </div>
+        <div class="todo-stuff">
+            <input type="checkbox" id="task2">
+            <label for="task2">Watch gladiators fight to the death</label>
+            <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+        </div>
+        <div class="todo-stuff">
+            <input type="checkbox" id="task3">
+            <label for="task3">Backstab our emperor during the senate meeting at 8pm</label>
+            <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+        </div>
+        <div class="todo-stuff">
+            <input type="checkbox" id="task4">
+            <label for="task4">Throw a massive unholy party at a sacred temple and offend the gods</label>
+            <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+        </div>
+        <div class="todo-stuff">
+            <input type="checkbox" id="task5">
+            <label for="task5">Execute servants for every minor inconvenience</label>
+            <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+        </div>
+        <div class="todo-stuff">
+            <input type="checkbox" id="task5">
+            <label for="task5">Be a general all-around terrible person</label>
+
+            <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+        </div>
+    </div>
+
+    <script>
+        //deletes when pressed delete
+        function deleteTask(button) {
+            const task = button.parentElement;
+            task.remove();
+        }
+    </script>
+</body>
+</html>

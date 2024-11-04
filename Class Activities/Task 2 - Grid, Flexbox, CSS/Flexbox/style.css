@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5f0c0c;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #5f0c0c;
+}
+
+.navbar a:hover {
+    color: #e38d8d;
+    transition: 1.5s;
+}
+
+/*the cards*/
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #5f0c0c;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-con {
+    padding: 1rem;
+}
+
+.card-con h2 {
+    margin-bottom: 0.5rem;
+}
+
+.card-con p {
+    margin-bottom: 1rem;
+}
+
+.card-con button {
+    padding: 0.5rem 1rem;
+    background-color: #5f0c0c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-con button:hover {
+    background-color: #e38d8d;
+}
+
+/*gallery styling*/
+.gallery-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 300px;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        justify-content: center;
+    }
+}
+
+/*quiz*/
+.quiz-con {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2rem 8.5rem;
+    background-color: #5f0c0c;
+    color: white;
+}
+
+.quiz-con {
+    padding: 1rem;
+}
+
+.quiz-ques h3 {
+    margin-bottom: 1.2rem;
+}
+
+.quiz-choices {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quiz-choices label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/*to do list*/
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 2rem 8.5rem;
+    background-color: #5f0c0c;
+    color: white;
+}
+
+.todo-stuff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.todo-stuff label {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.delete-btn {
+    background-color: #3a0909;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #e38d8d;
+}
