@@ -20,6 +20,8 @@ header {
   background-color: #231651;
   color: #ffffff;
   font-family: "Teko", sans-serif;
+  box-shadow: 0.5rem 0.5rem 0.1rem #eef36a;
+  border: 2px solid #000000;
 }
 
 .logo {
@@ -293,6 +295,9 @@ main {
   .big-info button {
     margin-top: auto;
   }
+  #barbie button {
+    font-size: 2rem;
+  }
   .big-movie button,
   .movie-info button,
   .movie-info2 button {
@@ -341,7 +346,9 @@ main {
   }
   .big-info button {
     font-size: 2rem;
-    margin: 0 1rem 1rem 1rem;
+  }
+  #barbie button {
+    margin: 0rem 1rem 1rem;
   }
   .movie-grid,
   .movie-grid2 {

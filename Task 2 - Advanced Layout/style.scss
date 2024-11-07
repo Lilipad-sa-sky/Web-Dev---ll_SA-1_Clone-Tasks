@@ -28,6 +28,8 @@ header {
   background-color: $blc;
   color: $wc;
   font-family: $hf;
+  box-shadow: $shadow $yc;
+  border: 2px solid $bc;
 }
 
 .logo {
@@ -309,7 +311,10 @@ main {
 
   .big-info button {
     margin-top: auto;
-    
+  }
+
+  #barbie button {
+    font-size: 2rem;
   }
 
   .big-movie button,
@@ -369,9 +374,11 @@ main {
 
   .big-info button {
     font-size: 2rem;
-    margin: 0 1rem 1rem 1rem;
   }
 
+  #barbie button {
+    margin: 0rem 1rem 1rem;
+  }
   .movie-grid,
   .movie-grid2 {
     width: 100%;
