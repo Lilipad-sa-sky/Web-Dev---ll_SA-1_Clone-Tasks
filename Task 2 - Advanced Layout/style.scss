@@ -8,6 +8,11 @@ $blc: #231651;
 $wc: #ffffff;
 $shadow: 0.5rem 0.5rem 0.1rem;
 
+/*HIDING THE SCROLLBAR*/
+::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+
 /*PRESETS*/
 * {
   margin: 0;
